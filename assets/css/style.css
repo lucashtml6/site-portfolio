@@ -2,6 +2,15 @@ body {
   height: 500vh;
 }
 
+.rolagem {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+}
+
 /* CABECALHO */
 .cabecalho {
   background-color: var(--cor-principal);
@@ -128,6 +137,12 @@ body {
   font-weight: 300;
   text-transform: capitalize;
   font-size: 2.3rem;
+}
+
+.painel .texto-painel h1::after {
+  content: "_";
+  font-weight: 500;
+  animation: piscar .5s infinite;
 }
 
 .painel .img-painel {
