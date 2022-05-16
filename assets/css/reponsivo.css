@@ -1,11 +1,28 @@
 @media (max-width: 1024px) {
-  
+  /* PAINEL */
+  .painel .img-painel {
+    width: 38rem;
+  }
+  /* =========== */
 }
 
 @media (max-width: 768px) {
+  /* PAINEL */
+  .painel .img-painel {
+    width: 30rem;
+  }
+
+  .painel .texto-painel h2 {
+    font-size: 3.2rem;
+  }
   
+  .painel .texto-painel h1 {
+    font-size: 2rem;
+  }
+  /* =========== */
 }
 @media (max-width: 557px) {
+  /* CABEÇALHO */
   .cabecalho .underline::after {
     display: none;
   }
@@ -102,9 +119,11 @@
     height: 15rem;
     visibility: visible;
   }
+  /* =========== */
 }
 
 @media (max-width: 425px) {
+  /* CABEÇALHO */
   .cabecalho {
     padding: 12px 0;
   }
@@ -163,12 +182,76 @@
     height: 13rem;
     visibility: visible;
   }
+  /* =========== */
+
+  /* PAINEL */
+  .painel {
+    background-color: #0c0114;
+    height: calc(100vh - 54px);
+  }
+
+  .painel > div {
+    flex-direction: column-reverse;
+  }
+
+  .painel .img-painel {
+    width: 25rem;
+  }
+
+  .painel .texto-painel {
+    text-align: center;
+  }
+  .painel .texto-painel h2 {
+    font-size: 3rem;
+  }
+  
+  .painel .texto-painel h1 {
+    font-size: 1.7rem;
+  }
+  /* =========== */
 }
 
 @media (max-width: 375px) {
+  /* CABEÇALHO */
+  .cabecalho .menu a {
+    font-size: 1.7rem;
+  }
+  /* =========== */
   
+
+  /* PAINEL */
+  .painel .img-painel {
+    width: 22rem;
+  }
+
+  .painel .texto-painel h2 {
+    font-size: 2.7rem;
+  }
+  
+  .painel .texto-painel h1 {
+    font-size: 1.6rem;
+  }
+  /* =========== */
 }
 
 @media (max-width: 320px) {
+  /* CABEÇALHO */
+  .cabecalho .menu a {
+    font-size: 1.5rem;
+  }
+  /* =========== */
   
+  /* PAINEL */
+  .painel .img-painel {
+    width: 22rem;
+  }
+
+  .painel .texto-painel h2 {
+    font-size: 2.5rem;
+  }
+  
+  .painel .texto-painel h1 {
+    font-size: 1.45rem;
+  }
+  /* =========== */
 }

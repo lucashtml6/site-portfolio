@@ -106,9 +106,11 @@ body {
 .painel > div {
   height: 100%;
   display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
+
 .painel .texto-painel {
   flex: 0 1 max-content;
 }
@@ -123,6 +125,7 @@ body {
 .painel .texto-painel h1 {
   color: white;
   font-family: 'Fira Code';
+  font-weight: 300;
   text-transform: capitalize;
   font-size: 2.3rem;
 }
