@@ -1,0 +1,94 @@
+body {
+  height: 500vh;
+}
+
+/* CABECALHO */
+.cabecalho {
+  background-color: var(--cor-principal);
+  padding: 20px 0;
+}
+
+.cabecalho .icone-terminal {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.cabecalho > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto
+}
+
+.cabecalho .menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.cabecalho .redes-sociais {
+  display: flex;
+  gap: 8px;
+}
+
+.cabecalho .redes-sociais a {
+  color: white;
+  font-size: 3rem;
+  transition: transform .3s ease-in-out;
+  display: block;
+}
+
+.cabecalho .redes-sociais a:hover {
+  transform: scale(1.2);
+}
+
+.cabecalho .item-menu {
+  color: white;
+  display: block; 
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.cabecalho .underline::after {
+  content: "";
+  display: block;
+  width: 80%;
+  margin: 0 auto; 
+  transform: scaleX(0);
+  height: 0.2rem;
+  background-color: white;
+  transition: transform .3s ease-in-out;
+}
+
+.cabecalho .item-menu:hover~.underline::after {
+  transform: scaleX(1);
+}
+
+.cabecalho .toggle-menu {
+  display: none;
+}
+
+.cabecalho .toggle-menu .bar {
+  width: 100%;
+  height: 0.3rem;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.cabecalho .btn-redes-sociais-toggle {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--cor-principal);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  display: none;
+}
+/* ========================================== */
