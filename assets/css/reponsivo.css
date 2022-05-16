@@ -5,9 +5,164 @@
 @media (max-width: 768px) {
   
 }
+@media (max-width: 557px) {
+  .cabecalho .underline::after {
+    display: none;
+  }
+
+  .cabecalho .toggle-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .cabecalho .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgb(4, 0, 7);
+    width: 100vw;
+    top: 65px;
+    right: 0;
+    height: 0;
+    transition: .9s cubic-bezier(0.18, 0.89, 0.32, 1.28); 
+    visibility: hidden;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  #nav.active .menu{
+    gap: 0;
+    height: calc(100vh - 78px);
+    visibility: visible;
+  }
+
+  .toggle-menu .bar1,
+  .toggle-menu .bar3 {
+    transition: transform .3s ease-in-out;
+  }
+
+  .toggle-menu .bar2 {
+    transition: opacity .2s ease-in-out;
+  }
+
+  #cabecalho.on .toggle-menu .bar1{
+    transform: rotate(45deg) translateY(9px) translateX(5px);
+  }
+
+  #cabecalho.on .toggle-menu .bar2{
+    opacity: 0;
+  }
+
+  #cabecalho.on .toggle-menu .bar3{
+    transform: rotate(-45deg) translateY(-11px) translateX(6px);
+  }
+
+  .cabecalho .menu a {
+    font-size: 2.5rem;
+    width: 100vw;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .cabecalho .redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-principal);
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border-radius: 10px;
+    z-index: 500;
+    height: 0;
+    width: 5rem;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+
+  .cabecalho .btn-redes-sociais-toggle {
+    display: block;
+  }
+
+  #cabecalho.ativo .redes-sociais {
+    display: flex;
+    height: 15rem;
+    visibility: visible;
+  }
+}
 
 @media (max-width: 425px) {
-  
+  .cabecalho {
+    padding: 12px 0;
+  }
+
+  .cabecalho .icone-terminal {
+    font-size: 2rem;
+  }
+
+  .cabecalho .toggle-menu {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .cabecalho .menu {
+    top: 54px;
+  }
+
+  #nav.active .menu{
+    gap: 0;
+    height: calc(100vh - 54px);
+    visibility: visible;
+  }
+
+  #cabecalho.on .toggle-menu .bar1{
+    transform: rotate(45deg) translateY(9px) translateX(7px);
+  }
+
+  #cabecalho.on .toggle-menu .bar3{
+    transform: rotate(-45deg) translateY(-5px) translateX(3px);
+  }
+
+  .cabecalho .menu a {
+    font-size: 2rem;
+  }
+
+  .cabecalho .btn-redes-sociais-toggle {
+    height: 45px;
+    width: 45px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .cabecalho .redes-sociais {
+    right: 25.5px;
+    bottom: 70px;
+    width: 3.5rem;
+  }
+
+  .cabecalho .redes-sociais a {
+    font-size: 2.5rem;
+  }
+
+  #cabecalho.ativo .redes-sociais {
+    display: flex;
+    height: 13rem;
+    visibility: visible;
+  }
 }
 
 @media (max-width: 375px) {
