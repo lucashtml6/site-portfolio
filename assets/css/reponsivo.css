@@ -114,6 +114,10 @@
     display: block;
   }
 
+  #cabecalho.ativo .btn-redes-sociais-toggle {
+    transform: rotate(135deg);
+  }
+
   #cabecalho.ativo .redes-sociais {
     display: flex;
     height: 15rem;
