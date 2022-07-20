@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
   --cor-principal: rgb(4, 0, 7);
+  --cor-secundaria: rgba(80,0,30,1);
 }
+
 * {
   padding: 0;
   margin: 0;
